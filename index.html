@@ -86,7 +86,7 @@
     <table dir="rtl" class="content">
       <tr>
         <td colspan="2" align="center" style="border-bottom: 1px solid #666;">
-          <strong>پیدا کردن آی‌پی تمیز کلادفلر</strong>
+          <strong>پیدا کردن آیپی تمیز کلادفلر(درصورت باروز هر گونه مشکل به @nwbru در تلگرام تماس برقرار کنید.)</strong>
         </td>
       </tr>
       <tr>
@@ -94,7 +94,7 @@
           <label>تعداد آی‌پی: <input type="number" id="max-ip" min="1" max="500" /></label>
         </td>
         <td>
-          <label>تاخیر مجاز: <input type="number" id="max-latency" min="300" max="3000" step="50"/></label>
+          <label>حداکثر تاخیر مجاز: <input type="number" id="max-latency" min="300" max="3000" step="50"/></label>
         </td>
       </tr>
       <tr>
@@ -104,7 +104,7 @@
       </tr>
       <tr>
         <td>
-          <label>استفاده از آدرس لندن: <input id="uk-cdn" type="checkbox" /></label>
+          <label>آیا از آدرس لندن هم موقع جستجو استفاده کند؟: <input id="uk-cdn" type="checkbox" /></label>
         </td>
         <td>
           <button class="start" onclick="startScan()">شروع</button>
@@ -112,7 +112,7 @@
       </tr>
     </table>
     <div class="text-div" style="border-top: 1px solid #666;">
-      <div id="start-hint" style="color: red;">قبل از شروع vpn خود را خاموش کنید!</div>
+      <div id="start-hint" style="color: red;">لطفا قبل از شروع  VPN خود را خاموش کنید با تشکر</div>
       <div style="width: 110px; float: right;"><span id="test-no"></span></div>
       <div style="width: 120px; float: right;"><span id="ip-no"></span></div>
       <div style="width: 30px; float: right;"><span id="ip-try"></span></div>
@@ -128,7 +128,7 @@
             آی پی
           </th>
           <th width="80">
-            تاخیر
+            تاخیر(هر چه کمتر بهتر)
           </th>
           <th width="60">
             <a class="download-link" href="#" onclick="downloadAsCSV()">
@@ -473,7 +473,7 @@ async function testIPs(ipList) {
 
 function copyToClipboard(ip) {
   navigator.clipboard.writeText(ip).then(() => {
-    alert('آی‌پی‌ در کلیپ‌بورد کپی شد.');
+    alert('!آیپی مورد نظر کپی شد.');
   }).catch(() => {
     alert('مشکلی پیش آمده است!');
   });
