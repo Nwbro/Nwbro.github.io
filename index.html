@@ -86,20 +86,20 @@
     <table dir="rtl" class="content">
       <tr>
         <td colspan="2" align="center" style="border-bottom: 1px solid #666;">
-          <strong>پیدا کردن آیپی تمیز کلادفلر(درصورت باروز هر گونه مشکل به @nwbru در تلگرام تماس برقرار کنید.)</strong>
+          <strong>پیدا کردن آیپی تمیز کلادفلر(درصورت بروز هر گونه مشکل به @nwbru در تلگرام مراجعه کنید).</strong>
         </td>
       </tr>
       <tr>
         <td>
-          <label>تعداد آی‌پی: <input type="number" id="max-ip" min="1" max="500" /></label>
+          <label>چند تا آیپی پیدا کند؟: <input type="number" id="max-ip" min="1" max="500" /></label>
         </td>
         <td>
-          <label>حداکثر تاخیر مجاز: <input type="number" id="max-latency" min="300" max="3000" step="50"/></label>
+          <label>(کمتر بهتر)حداکثر تاخیر مجاز: <input type="number" id="max-latency" min="300" max="3000" step="50"/></label>
         </td>
       </tr>
       <tr>
         <td colspan="2">
-          <label>عبارت منظم: <input type="text" dir="ltr" id="ip-regex" placeholder="^104\.17\.|^141\." /></label>
+          <label>(برای استفاده از آیپی رنج خاصی)عبارت منظم: <input type="text" dir="ltr" id="ip-regex" placeholder="^104\.17\.|^141\." /></label>
         </td>
       </tr>
       <tr>
@@ -107,12 +107,12 @@
           <label>آیا از آدرس لندن هم موقع جستجو استفاده کند؟: <input id="uk-cdn" type="checkbox" /></label>
         </td>
         <td>
-          <button class="start" onclick="startScan()">شروع</button>
+          <button class="start" onclick="startScan()">شروع کن</button>
         </td>
       </tr>
     </table>
     <div class="text-div" style="border-top: 1px solid #666;">
-      <div id="start-hint" style="color: red;">لطفا قبل از شروع  VPN خود را خاموش کنید با تشکر</div>
+      <div id="start-hint" style="color: red;">لطفا قبل از شروع کردن VPN خود را خاموش کنید با تشکر!</div>
       <div style="width: 110px; float: right;"><span id="test-no"></span></div>
       <div style="width: 120px; float: right;"><span id="ip-no"></span></div>
       <div style="width: 30px; float: right;"><span id="ip-try"></span></div>
